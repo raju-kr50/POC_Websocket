@@ -22,7 +22,7 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
      i.e. url will be http://localhost:8080/socket */
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/message").setAllowedOrigins("http://localhost:4202").withSockJS();
+        registry.addEndpoint("/broadcasting").setAllowedOrigins("http://localhost:4200").withSockJS();
         }
 }
 

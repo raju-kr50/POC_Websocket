@@ -9,8 +9,8 @@ import $ from 'jquery';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Welcome to websocket chat';
-  private serverUrl = 'http://localhost:8085/message';
+  title = 'Chat-Box';
+  private serverUrl = 'http://localhost:8080/broadcasting';
   private stompClient;
   constructor() {
     this.initializeWebSocketConnection();
